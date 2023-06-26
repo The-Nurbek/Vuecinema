@@ -1,0 +1,146 @@
+@media (max-width: 1200px) {
+  .films__cards {
+    grid-template-columns: repeat(2, 255px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    margin: 0 auto;
+  }
+
+  .collection__cards {
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger__menu {
+    display: block;
+  }
+  .series__cards {
+    grid-template-areas:
+      "thrones"
+      "wanda "
+      "flash"
+      "great"
+      "witcher"
+      "gotham";
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .series__card_title {
+    font-size: 27px;
+  }
+  .series__card_text {
+    font-size: 15px;
+  }
+  .series__card {
+    width: 100%;
+    margin: auto;
+    height: 350px;
+  }
+
+  .nav__item_list {
+    position: absolute;
+    top: 0;
+    left: -200%;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    width: 220px;
+    align-items: center;
+    height: 100vh;
+    padding-top: 40px;
+  }
+
+  .nav__item_list.active {
+    left: 0;
+  }
+
+  .padding {
+    padding: 30px 6px 20px 6px;
+  }
+
+  .header__content_title {
+    font-size: 55px;
+  }
+
+  .header__content {
+    align-items: center;
+  }
+
+  .widow__item {
+    align-items: center;
+  }
+
+  .widow__item_text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+    .footer__item{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;  
+    }
+    .footer__items{
+        height: 100%;
+       
+    }
+    
+    .series__card{
+        width: 100%;
+    margin: auto;
+    height: 489px
+    }
+  .header__content_title {
+    font-size: 35px;
+  }
+
+  .btn {
+    padding: 17px 30px;
+  }
+
+  .header {
+    height: 640px;
+  }
+
+  .films__cards {
+    grid-template-columns: repeat(1, 255px);
+  }
+
+  .widow::after {
+    background: linear-gradient(180deg, #def7ff 0%, #f4fcff 31%, rgba(255, 255, 255, 0) 100.72%);
+  }
+
+  .widow__item img {
+    width: 100%;
+  }
+
+  .widow__item_text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__content_title {
+    font-size: 31px;
+    line-height: 20px;
+  }
+
+  .films__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .collection__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+}
